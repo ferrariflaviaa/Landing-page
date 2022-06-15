@@ -1,32 +1,50 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     text-decoration: none;
     
 }
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
 .Container{
-    text-decoration: none;
-    background-color: #e5e3e3;
+    /* text-decoration: none; */
+    /* background-color: #f3eded; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-left: 50px;
+    height: 100vh;
+
 }
 .ImgCell{
     width: 50%;
-    margin: 0;
+    /* padding-top: 50px; */
+    height: 110%;
 }
 .ImgCell img{
-    display: flex;
-    width: 120%;
-    height: 40rem;
+    /* display: flex; */
+    width: 150%;
+    /* height: 80%; */
+    height: 45rem;
     align-items: center;
     justify-content: center;
     padding-left: 60px;
 
+}
+.ContainerI{
+    min-height: 34rem;
+    padding-left: 150px;
 }
 .ContainerInsta{
     display: flex;
@@ -35,37 +53,106 @@
     justify-content: center;
     background-color: #fff;
     width: 60%;
-    margin: 200px 5px 20px;
+    padding-left: 20px;
+    margin: 40px 5px 5px;
     border: 1px solid lightgray;
 }
 
-.ContainerInsta h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px 0;
+.Logo{
+    padding: 15px 0px;
+    height: 2.5rem;
 }
 
-.ContainerInsta img{
+.Perfil{
     padding: 10px 0px;
     height: 6rem;
     border-radius: 100%;
 }
-
 .ButtonRemove{
     font-family: sans-serif;
     font-size: 15px;
     color: #0095f6;
-    padding: 10px 10px 20px;
+    padding: 10px 10px 15px;
 }
 
 .ButtonContinue{
     background-color: #0095f6;
     border-radius: 5px;
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     /* font-size: 14px; */
     text-align: center;
     padding: 5px 10px;
-    margin: 10px 0px;
+    margin: 5px 0px 0px;
 }
 
+.Alterar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    width: 63%;
+    padding: 15px 0px;
+    margin: 0px 5px 20px;
+    border: 1px solid lightgray;
+}
+
+.Alterar h5{
+    color: rgb(160, 160, 160);
+}
+.Alterar a{
+    color: #0095f6;
+}
+
+.Baixe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 63%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.BaixeIMG{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-content: center;
+    width: 100%;
+}
+.BaixeApp{
+    display: flex;
+    width: 35%;
+    margin-top: 10px;
+}
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .Container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .Container {
+        width: 90%;
+    }
+
+    .ImgCell {
+        display: none;
+    }
+
+    .ContainerInsta {
+        width: 100%;
+    }
+    
+    .Alterar {
+        border: 1px solid transparent;
+    }
+}
