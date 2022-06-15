@@ -140,19 +140,40 @@ body {
         background-color: #ffffff;
     }
 
-    .Container {
-        width: 90%;
+    .Container{
+        width: 100%;
+        margin: 50px 0px 0px;
+        padding-left: 0px !important;
+
     }
 
     .ImgCell {
         display: none;
     }
-
+    .ContainerI{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        margin: 0;
+        padding-left: 0px !important;
+    }
     .ContainerInsta {
         width: 100%;
+        border: 0px;
+        margin: 0px !important;
+        padding-left: 0px !important;
+
     }
     
     .Alterar {
+        width: 100%;
+        text-align: center;
         border: 1px solid transparent;
     }
+    .Baixe{
+        width: 100%;
+        text-align: center;
+    }
+
+
 }
